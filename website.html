@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukasz Marcell</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c643a25425.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.jpg" class="logo">
+            
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">New songs</a></li>
+                <li><a href="#tour">Tour 2023</a></li>
+                <li><a href="#merch">Merch</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Lukasz Marcell</p>
+            <h1><span>Middle of the night</span> is OUT NOW.</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="IMG_9519.JPG" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I accidentally got to know music-making programs when I was 12 years old. 
+                    I was the kid how downloaded everything from the internet without caring about viruses. 
+                    If I remember correctly, I downloaded a game but in its folder, there was a browser and another program that I had no idea what it was. 
+                    I opened it and I saw that it had tracks and little icons resembling musical instruments. 
+                    I looked it up on the internet and learned how to use it.</p>
+                <p>I have always tried my hand at songwriting but my first songs weren't really the best ones. I had nothing to write lyrics about.
+                    Then in the summer of 2021 my heart got broken by a girl I was fully in love with. 
+                    I really couldn't process what happend and then I started writing songs.
+                    And when I showed my first songs to my friends and they liked it, it made me feel cheerful and alive again.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="service">
+    <div class="container">
+        <h1 class="sub-title">New songs</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>Middle of the night</h2>
+                <p>I mean it's my favourite. It's happy. 
+                    It's about the feeling of unspoken love when you both know you love each other but you play the unattainable. </p>
+                    <a href="#">Listen now</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>Goodbye</h2>
+                <p>I wrote this song about falling in love with you best friend who left you life.
+                    It is kinda heartbreaking but I guess it's relatable.</p>
+                    <a href="#">Listen now</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>I'm not perfect</h2>
+                <p>This song is about regretting you actions. 
+                    Life is running fast and sometimes you don't even realise letting go of someone until they actually gone.</p>
+                    <a href="#">Listen now</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div id="tour">
+    <div class="container">
+        <h1 class="sub-title">Tour 2023</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-ticket"></i>
+                <h2>Debrecen, HU</h2>
+                <p>March 25, 2023</p>
+                <a href="#">Tickets</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-ticket"></i>
+                <h2>Budapest, HU</h2>
+                <p>March 30, 2023</p>
+                    <a href="#">Tickets</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-ticket"></i>
+                <h2>Veszprém</h2>
+                <p>April 2, 2023</p>
+                    <a href="#">Tickets</a>
+            </div>      
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="merch">
+    <div class="container">
+        <h1 class="sub-title">Merch</h1>
+        <h3>Coming soon...</h3>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fas fa-envelope"></i> marcimusicnews@gmail.com</p>
+                <p><i class="fas fa-phone"></i> 0630 123 4567</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100007186846251"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/lukasz_marcii/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/LukaszMarcell"><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwfBmCi3z1f4y9Syyp4_J5p2iG29xtXqQXEFn7oGLP5yn-fSFE40NRhKV1uAanYUFK8/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
